@@ -5,7 +5,7 @@ do
     
     if which "${name}" > /dev/null
     then
-        cmd=$(cp "${i}" /etc/apparmor.d/.)
+        cmd=$(mv "${i}" /etc/apparmor.d/.)
         echo "${cmd}"
     fi
 
